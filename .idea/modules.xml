@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MyJava8.iml" filepath="$PROJECT_DIR$/MyJava8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.soumyatest.RxJava/com.soumyatest.RxJava.iml" filepath="$PROJECT_DIR$/com.soumyatest.RxJava/com.soumyatest.RxJava.iml" />
+    </modules>
+  </component>
+</project>

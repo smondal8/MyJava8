@@ -8,7 +8,7 @@ public class Bubble implements Sorting{
         Bubble bubble = new Bubble();
         Integer[] output = bubble.sort(list);
         for (int i = 0; i < list.length; i++) {
-            System.out.println(list[i]);
+            System.out.print(list[i] + " ");
         }
     }
 

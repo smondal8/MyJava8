@@ -9,6 +9,16 @@ public class MirrorTree {
         System.out.print(node.value+" ");
         inOrderTraversal(node.right);
     }
+
+    public static Node mirrorize(Node node){
+        if(node == null){
+            return null;
+        }
+        Node nodeResult = new Node(node.value,null,null);
+        nodeResult.left = mirrorize(node.right);
+        nodeResult.right = mirrorize(node.left);
+        return nodeResult;
+    }
     public static void main(String[] args) {
         Node myTree = new Node(9,null,null);
         myTree.left = new Node(10,null,null);
@@ -20,5 +30,9 @@ public class MirrorTree {
         myTree.right.right.left = new Node(17,null,null);
         myTree.right.right.right = new Node(27,null,null);
         inOrderTraversal(myTree);
+        System.out.println();
+        Node newTree = mirrorize(myTree);
+        System.out.println();
+        inOrderTraversal(newTree);
     }
 }

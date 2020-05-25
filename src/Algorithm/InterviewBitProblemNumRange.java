@@ -19,6 +19,9 @@ public class InterviewBitProblemNumRange {
                     else if(sum+A[start+offset]>=C){
                         break;
                     }
+                    else if(sum+A[start+offset]<B){
+                        sum = sum+A[start+offset];
+                    }
                     offset++;
                 }
                 start++;

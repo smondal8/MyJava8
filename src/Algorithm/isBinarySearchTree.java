@@ -66,7 +66,6 @@ boolean checkBST(Node root) {
     	right(root.right, root.data);
 }
          */
-        */
-         */
+
     }
 }

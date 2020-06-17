@@ -8,6 +8,6 @@ public class dynamicArray {
         // Write your code here
         int N = queries.get(0).size();
         int Last_Answer = 0;
-        
+        return null;
     }
 }

@@ -36,7 +36,9 @@ public class Solution1 {
         int rightRow = matrix.length/2;
         int rightCol = matrix.length-1;
         //point 4
-        int bottomRow = matrix.length-1;
+        int bottomRow = matrix.length-1;                                    /*              N
+                                                                                        W ----- E
+                                                                                            S                */
         int bottomCol = matrix.length/2;
         int row = 0;
         int col = 0;

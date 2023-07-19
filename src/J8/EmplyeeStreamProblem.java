@@ -3,6 +3,8 @@ package J8;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 import static java.util.stream.Collectors.*;
 
@@ -65,7 +67,7 @@ public class EmplyeeStreamProblem {
         }).forEach(System.out::println);
         //////////////////
         Map<String, List<EmplyeeStreamProblem>> collectedMap = listEmployee.stream()
-                .collect(groupingBy(EmplyeeStreamProblem::getDepartment));
+                .collect(groupingBy(EmplyeeStreamProblem::getDepartment, Collectors.mapping(Function.identity(),Collectors.toList())));
 
     }
 }
